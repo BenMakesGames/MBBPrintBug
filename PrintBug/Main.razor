@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Components.Routing;
+
+<ContentView>
+    <StackLayout>
+        <BlazorWebView VerticalOptions="LayoutOptions.FillAndExpand">
+            <Router AppAssembly="@GetType().Assembly">
+                <Found Context="routeData">
+                    <RouteView RouteData="@routeData"/>
+                </Found>
+                <NotFound>
+                    <p>Sorry, there's nothing at this address.</p>
+                </NotFound>
+            </Router>
+        </BlazorWebView>
+    </StackLayout>
+</ContentView>
