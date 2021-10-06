@@ -14,6 +14,7 @@
     <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.Windows" Version="0.5.50-preview" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
     <PackageReference Include="Xamarin.Forms.Platform.WPF" Version="5.0.0.2083" NoWarn="NU1701" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.961.33" />
   </ItemGroup>
 
   <ItemGroup>

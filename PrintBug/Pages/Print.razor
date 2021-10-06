@@ -1,8 +1,11 @@
 ﻿@page "/print"
 
 <h1>Print</h1>
-<ul>
-   <a href="/">Go to Home page</a>
-   <a href="javascript:print();">Print with <code>javascript:print();</code></a>
-   <button @onclick="DoPrint">Print with <code>JS.InvokeVoidAsync("print");</code></button>
-</ul>
+<ol>
+   <li><a href="/">Go to Home page with <code>a href</code></a></li>
+   <li><button @onclick="DoGoHome">Go to Home page with <code>NavigationManager</code></button></li>
+   <li><a href="javascript:print();">Print with <code>javascript:print();</code></a></li>
+   <li><button @onclick="DoPrint">Print with <code>JS.InvokeVoidAsync("print");</code></button></li>
+</ol>
+<p>When printing with #3 <code>javascript:print();</code>, the print dialog comes up, and after closing it you can continue to use the application as normal. Neat!</p>
+<p>When printing with #4 <code>JS.InvokeVoidAsync("print");</code>, then print dialog comes up, but after closing it, navigation (#1 and #2) ceases to function!</p>
